@@ -1,0 +1,119 @@
+/* app-container styles */
+.App {
+  display: flex;
+  background-color: black;
+  /* Set the background color to black */
+  height: 100vh;
+  /* 100% of the viewport height */
+}
+
+/* slider-container styles */
+.slider-container {
+  padding: 20px;
+  background-color: #333;
+  /* Background color for the slider container */
+  color: white;
+  /* Text color in the slider container */
+  overflow-y: auto;
+  /* Add a scroll bar if the content exceeds the height */
+  width: 15%;
+  height: 100vh;
+  /* Stretch the slider container to full height */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align sliders to the left */
+}
+
+/* h2 styles */
+.slider-container h2 {
+  font-size: 24px;
+  /* Adjust the font size */
+  margin-bottom: 10px;
+  /* Add some margin between sliders */
+}
+
+/* input styles */
+.slider-container input {
+  width: 100%;
+  /* Make the sliders take up the full width of the container */
+  margin-bottom: 8px;
+}
+
+/* image-container styles */
+.image-container {
+  padding: 20px;
+  overflow: hidden;
+  /* Hide any overflowing content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjust the image size */
+.image-container img {
+  width: auto;
+  height: 100vh;
+  max-width: 1000%;
+  /* Make sure the image doesn't exceed its container */
+}
+
+.image-and-plot-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.proton-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.epsi-plot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0.5; 
+}
+
+/* Optional: You can add more styles as needed */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
